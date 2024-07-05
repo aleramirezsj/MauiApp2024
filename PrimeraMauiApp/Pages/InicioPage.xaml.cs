@@ -6,4 +6,9 @@ public partial class InicioPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+		Navigation.PushAsync(new LibrosPage());
+    }
 }

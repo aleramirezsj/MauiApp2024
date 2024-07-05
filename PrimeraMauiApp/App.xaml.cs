@@ -1,4 +1,5 @@
-﻿using PrimeraMauiApp.Pages;
+﻿using Microsoft.Maui.Controls;
+using PrimeraMauiApp.Pages;
 
 namespace PrimeraMauiApp
 {
@@ -8,7 +9,7 @@ namespace PrimeraMauiApp
         {
             InitializeComponent();
 
-            MainPage = new InicioPage();
+            MainPage = new NavigationPage(new InicioPage());
         }
     }
 }

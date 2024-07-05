@@ -9,5 +9,10 @@
             FontSize="Large"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Button Text="Libros"
+                FontSize="Large"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
