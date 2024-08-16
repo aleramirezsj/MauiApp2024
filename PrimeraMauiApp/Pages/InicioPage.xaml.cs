@@ -11,4 +11,9 @@ public partial class InicioPage : ContentPage
     {
 		Navigation.PushAsync(new LibrosPage());
     }
+
+    private void btnControlesComunes_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new ControlesComunesPage());
+    }
 }

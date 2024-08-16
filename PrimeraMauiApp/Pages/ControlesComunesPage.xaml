@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeraMauiApp.Pages.ControlesComunesPage"
+             Title="ControlesComunesPage">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid ColumnDefinitions="*,3*,*" RowDefinitions="*,*,*,*,*,*,*,*,*,*" BackgroundColor="CadetBlue" Style="{StaticResource EstiloGrid}">
+                <Frame Grid.ColumnSpan="3" BackgroundColor="Honeydew">
+                    <Label Text="Controles Comunes NET MAUI"  FontSize="Large"/>
+                </Frame>
+                <Label Text="Label" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Permite mostrar texto en pantalla" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Libros" Grid.Row="1" Grid.Column="2" />
+                
+                
+                <Label Text="Button" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Permite crear botones en pantalla" Grid.Row="2" Grid.Column="1"/>
+                <Button Text="Guardar" Grid.Row="2" Grid.Column="2" WidthRequest="100"/>
+
+                <Label Text="BoxView" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="Permite crear cuadros de color" Grid.Row="3" Grid.Column="1"/>
+                <BoxView BackgroundColor="Beige" Grid.Row="3" Grid.Column="2" WidthRequest="100" HeightRequest="25"/>
+
+                <Label Text="DatePicker" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="Permite definir una fecha desplegando un calendario para elegirla" Grid.Row="4" Grid.Column="1"/>
+                <DatePicker BackgroundColor="Beige" Grid.Row="4" Grid.Column="2" />
+                
+                
+                <Label Text="TimePicker" Grid.Row="6" Grid.Column="0"/>
+                <Label Text="Permite definir una hora desplegando una lista de horas" Grid.Row="6" Grid.Column="1"/>
+                <TimePicker BackgroundColor="Beige" Grid.Row="6" Grid.Column="2"  />
+
+                <Label Text="Entry" Grid.Row="7" Grid.Column="0"/>
+                <Label Text="Campo de entrada de texto." Grid.Row="7" Grid.Column="1"/>
+                <Entry Placeholder="Apellido y nombre" Grid.Row="7" Grid.Column="2"  />
+            </Grid>
+            <Line  BackgroundColor="Red" HeightRequest="3"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
